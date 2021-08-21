@@ -1,4 +1,9 @@
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+/* eslint-disable */
+
+import '@fortawesome/fontawesome-free/js/brands'
+import '@fortawesome/fontawesome-free/js/solid'
+import '@fortawesome/fontawesome-free/js/fontawesome'
+
 // @ts-ignore
 import App from './App.svelte'
 

@@ -54,9 +54,10 @@ module.exports = {
         "no-unused-vars": ["error", {"args": "none"}], // variáveis declaradas precisam necessariamente ser usadas, exceto argumentos de funções
 
         // TypeScript
-        "@typescript-eslint/no-unused-vars": ["error", {"args": "none"}],  // variáveis declaradas precisam necessariamente ser usadas, exceto argumentos de funções
+        "@typescript-eslint/no-unused-vars": "off",  // no-unused-vars is enough. This options needs to off for svelte
         "@typescript-eslint/no-explicit-any": "off", // permite o uso do any
         "@typescript-eslint/interface-name-prefix": "off", // permite que interfaces comecem com I
-        "@typescript-eslint/explicit-module-boundary-types": "off" // permite que funções de classe ou exportadas não declarem valor de retorno
+        "@typescript-eslint/explicit-module-boundary-types": "off", // permite que funções de classe ou exportadas não declarem valor de retorno
+        "@typescript-eslint/no-empty-function": "off" // permite a declaração de funções vazias
     }
 }
