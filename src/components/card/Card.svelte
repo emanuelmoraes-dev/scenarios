@@ -7,7 +7,7 @@
     export let collapsable = false
     export let collapse = false
     export let collapseIcon = true
-    export let collapseTransitionDuration = '0.8s'
+    export let collapseTransitionDuration = '0.5s'
 
     // events
     export let onClick: () => unknown = () => {}
