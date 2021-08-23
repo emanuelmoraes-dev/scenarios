@@ -44,10 +44,12 @@
         </slot>
     </div>
 
-    <div class="content" class:collapse
-         style="transition-duration: {collapseTransitionDuration}"
-    >
-        <slot></slot>
+    <div class="content">
+        <div class="content-value" class:collapse
+             style="transition-duration: {collapseTransitionDuration}"
+        >
+            <slot></slot>
+        </div>
     </div>
 </div>
 
@@ -98,12 +100,20 @@
         }
 
         .content {
-            background-color: @background-content;
             flex: 1;
-            transition-property: flex;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
 
-            &.collapse {
-                flex: 0 !important;
+            .content-value {
+                background-color: @background-content;
+                overflow: hidden;
+                height: 100%;
+                transition-property: height;
+
+                &.collapse {
+                    height: 0 !important;
+                }
             }
         }
     }
